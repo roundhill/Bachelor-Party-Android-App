@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/mainLL"> 
+<RelativeLayout  
+			  android:id="@+id/mainRL" 
+			  android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_weight="1.0">   
+              <RelativeLayout  
+			  android:id="@+id/subRL" 
+			  android:background="@drawable/app_bg"
+			  android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dip"
+              android:paddingTop="38dip"
+              android:paddingRight="46dip"
+              android:paddingLeft="46dip"> 
+              <TextView  
+              android:id="@+id/questListLabel"
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:typeface="serif"
+              android:textColor="#464646"
+              android:textSize="18dip"
+              android:textStyle="bold"
+              android:shadowColor="#FFFFFF"
+              android:shadowDx="0"
+              android:shadowDy="-1"
+              android:shadowRadius="1"
+              android:layout_marginLeft="18dip"
+              android:layout_marginTop="10dip"
+              android:text="Quest Guide">
+              </TextView>
+                
+<ListView android:id="@android:id/list"
+android:layout_below="@id/questListLabel"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:layout_marginBottom="46dip"
+ android:layout_marginRight="4dip"
+ android:textColor="#444444"
+android:dividerHeight="1px"
+android:cacheColorHint="#00000000">
+</ListView>
+          </RelativeLayout>
+          <RelativeLayout android:layout_above="@id/mainRL"
+			  android:id="@+id/image" 
+			  android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" >
+              <ImageView  android:id="@+id/header"
+android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:src="@drawable/header"></ImageView>
+              </RelativeLayout>
+              <TextView  
+			  android:id="@+id/score"
+			  android:layout_alignBottom="@id/subRL"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:typeface="serif"
+              android:shadowColor="#000000"
+              android:shadowDx="0"
+              android:shadowDy="-1"
+              android:shadowRadius="1"
+              android:paddingLeft="4dip"
+              android:textColor="#FFFFFF"
+              android:textSize="22dip"
+              android:background="#99000000"
+              android:text="Your Score: ">
+              </TextView>
+</RelativeLayout>
+
+</LinearLayout>
